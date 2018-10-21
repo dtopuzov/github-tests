@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'checkstyle'
+}
+
+group 'com.pragmatic'
+version '0.0.1'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.testng', name: 'testng', version: '6.14.3'
+}
+
+task apiTests(type: Test, description: 'GitHub API Tests', group: 'Verification') {
+
+    include "**/api/**"
+
+    useTestNG()
+
+    testLogging {
+        showStandardStreams = true
+
+        exceptionFormat "full"
+        events "passed", "skipped", "failed"
+    }
+}
