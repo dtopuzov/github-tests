@@ -3,6 +3,9 @@ package web.issues;
 import base.WebTest;
 import org.testng.annotations.Test;
 
+/**
+ * Tests for Issues web page.
+ */
 public class IssuesPage extends WebTest {
 
     @Test

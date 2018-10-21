@@ -28,3 +28,6 @@ hs_err_pid*
 # Idea Files #
 .idea
 build
+
+# macOS Files #
+.DS_Store

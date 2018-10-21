@@ -3,6 +3,10 @@ package api;
 import base.ApiTest;
 import org.testng.annotations.Test;
 
+
+/**
+ * Tests for GitHub's Issues Api.
+ */
 public class IssuesApiTests extends ApiTest {
 
     @Test

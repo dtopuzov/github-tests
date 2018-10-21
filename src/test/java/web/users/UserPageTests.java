@@ -3,6 +3,9 @@ package web.users;
 import base.WebTest;
 import org.testng.annotations.Test;
 
+/**
+ * Tests for User web page.
+ */
 public class UserPageTests extends WebTest {
 
     @Test
