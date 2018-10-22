@@ -12,8 +12,9 @@ import static io.restassured.RestAssured.basic;
  */
 public class ApiTest {
 
-    private static String USER = "ws-test-user";
-    private static String PASS = System.getenv("GITHUB_PASS");
+    protected static final String USER = "ws-test-user";
+    protected static final String REPO = "test";
+    protected static final String PASS = System.getenv("GITHUB_PASS");
 
     @BeforeSuite
     public void beforeSuite() {

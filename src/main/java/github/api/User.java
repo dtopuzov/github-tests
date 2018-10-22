@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+/**
+ * GitHub user class.
+ */
 @SuppressWarnings("unused")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -40,7 +43,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "updated_at"
 })
 public class User {
-
     @JsonProperty("login")
     public String login;
     @JsonProperty("id")
@@ -103,5 +105,4 @@ public class User {
     public String createdAt;
     @JsonProperty("updated_at")
     public String updatedAt;
-
 }

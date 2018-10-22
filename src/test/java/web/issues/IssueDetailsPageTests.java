@@ -4,7 +4,7 @@ import base.WebTest;
 import org.testng.annotations.Test;
 
 /**
- * Tests for Issue Details web page.
+ * Tests for Label Details web page.
  */
 public class IssueDetailsPageTests extends WebTest {
 
